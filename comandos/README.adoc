@@ -1,4 +1,3 @@
-
 == Resumo de Comandos AsciiDoc
 
 === Seções/Títulos, Numeração

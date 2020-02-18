@@ -34,6 +34,7 @@ for FILE in `find . -name "*.adoc"`; do
     if [[ "$FILE" != "./README.adoc" ]]; then
         cat /tmp/config.adoc "$FILE" > /tmp/concatenated.adoc; 
         mv /tmp/concatenated.adoc "$FILE"
+        git add "$FILE"
     fi
 done
 
