@@ -1,27 +1,34 @@
-= Resumo de Comandos AsciiDoc
+== Resumo de Comandos AsciiDoc
 
-== Seções/Títulos, Numeração
+=== Seções/Títulos, Numeração
 
 [source, asciidoc]
 ----
-=
-==
-===
-====
+= Título
+== Título 1
+=== Título 2
+==== Título 3
 ----
 
-== Marcadores (Numerados e Não numerados)
+Para numerar os títulos, basta adicionar a linha abaixo no topo do documento:
 
-== Itálico, Negrito, Sublinhado
+[source, asciidoc]
+----
+:numbered:
+----
 
-== Links
+=== Marcadores (Numerados e Não numerados)
 
-== Tabelas
+=== Itálico, Negrito, Sublinhado
 
-== Vídeos
+=== Links
 
-== Notas, Ícones
+=== Tabelas
 
-== Blocos de código fonte
+=== Vídeos
 
-== Include, Trechos de arquivos
+=== Notas, Ícones
+
+=== Blocos de código fonte
+
+=== Include, Trechos de arquivos

@@ -7,8 +7,24 @@
 :stylesheet: adoc-github.css
 :safe: unsafe
 :numbered:
-:listing-caption: Listing
 :toc: left
+:toc-title: Sumário
+:toclevels: 5
+
+ifdef::env-github[]
+:outfilesuffix: .adoc
+:caution-caption: :fire:
+:important-caption: :exclamation:
+:note-caption: :paperclip:
+:tip-caption: :bulb:
+:warning-caption: :warning:
+endif::[]
+
+
+:chapter-label:
+:description: Elaboração de material didático multimídia com AsciiDoc, git e GitHub
+:listing-caption: Listagem
+:figure-caption: Figura
 
 = Elaboração de material didático multimídia com AsciiDoc, git e GitHub
 
@@ -27,6 +43,16 @@ Crie uma conta no GitHub em https://github.com/signup. O nome de usuário se tor
 
 Qualquer dúvida, podem entrar em contato diretamente comigo.
 Para qualquer alteração em um projeto que você desejar enviar para o GitHub a partir da sua máquina, você precisará informar nome de usuário e senha. Isso se tornará um processo bastante chato e que toma tempo. Para evitar isso, na nossa máquina pessoal, podemos configurar a autenticação por meio de um par de chaves pública/privada. Para isto, siga o tutorial disponível https://youtu.be/Qp0lDxgoQE0[aqui].
+
+ifdef::backend-pdf[]
+include::comandos-asciidoc.adoc[]
+endif::[]
+
+ifdef::backend-html[]
+== Comandos AsciiDoc
+
+link:comandos-asciidoc[Um resumo dos comandos AsciiDoc está disponível aqui.]
+endif::[]
 
 
 == Referências
