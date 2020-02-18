@@ -1,0 +1,10 @@
+:revealjsdir: https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0
+:revealjs_slideNumber: true
+:source-highlighter: highlightjs
+:icons: font
+:imagesdir: /images
+:stylesheet: /adoc-github.css
+:numbered:
+:toc: left
+:toc-title: Sumário
+:toclevels: 5
