@@ -25,6 +25,18 @@ else
 fi
 echo ""
 
+#Gets the attributes from the header of the main asciidoc file (README.adoc) at the current dir
+cat README.adoc | grep "^:.*:" > /tmp/config.adoc
+
+#Adds such attributes to the top of the other adoc files,
+#so that they will have the same configurations
+for FILE in `find . -name "*.adoc"`; do 
+    if [[ "$FILE" != "./README.adoc" ]]; then
+        cat /tmp/config.adoc "$FILE" > /tmp/concatenated.adoc; 
+        mv /tmp/concatenated.adoc "$FILE"
+    fi
+done
+
 echo "Converting AsciiDoc files to HTML"
 find . -name "*.adoc" | xargs asciidoctor -b html 
 
