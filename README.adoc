@@ -48,7 +48,7 @@ ifdef::backend-pdf[]
 include::comandos-asciidoc.adoc[]
 endif::[]
 
-ifdef::backend-html[]
+ifndef::backend-pdf[]
 == Comandos AsciiDoc
 
 link:comandos-asciidoc[Um resumo dos comandos AsciiDoc está disponível aqui.]
