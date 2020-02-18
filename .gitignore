@@ -1,2 +1,8 @@
+# Aqui são listados os arquivos que não devem ser incluídos no repositório git,
+# pois são arquivos gerados a partir de algum processo de compilação.
+# Assim, não precisamos deles, mas apenas dos fontes.
+# Neste repositório, arquivos HTML e PDF são gerados a partir dos
+# arquivos adoc
+
 *.html
 *.pdf
