@@ -6,5 +6,5 @@ sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/v
 sudo apt update
 sudo apt install code -y
 
-sudo apt install ruby gem asciidoctor git -y
+sudo apt install make ruby gem asciidoctor git -y
 sudo gem install asciidoctor-pdf asciidoctor-revealjs
