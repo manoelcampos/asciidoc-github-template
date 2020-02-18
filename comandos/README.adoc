@@ -1,3 +1,29 @@
+:revealjsdir: https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0
+:revealjs_slideNumber: true
+:source-highlighter: highlightjs
+:icons: font
+:imagesdir: ../images
+:stylesheet: ../adoc-github.css
+:numbered:
+:toc: left
+:toc-title: Sumário
+:toclevels: 5
+
+ifdef::env-github[]
+//Exibe ícones para os blocos como NOTE e IMPORTANT no GitHub
+
+:caution-caption: :fire:
+:important-caption: :exclamation:
+:note-caption: :paperclip:
+:tip-caption: :bulb:
+:warning-caption: :warning:
+endif::[]
+
+:chapter-label:
+:description: Elaboração de material didático multimídia com AsciiDoc, git e GitHub
+:listing-caption: Listagem
+:figure-caption: Figura
+
 == Resumo de Comandos AsciiDoc
 
 === Seções/Títulos, Numeração
