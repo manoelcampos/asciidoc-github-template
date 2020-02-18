@@ -1,0 +1,17 @@
+= Elaboração de material didático multimídia com AsciiDoc, git e GitHub
+
+== Instalação das ferramentas
+
+Execute o script link:ferramentas.sh[ferramentas.sh] em um terminal com sistema Ubuntu ou qualquer derivado de Debian: 
+
+[source, bash]
+----
+sh ferramentas.sh
+----
+
+Se sua distribuição for antiga ou não for 64 bits, pode ser que a instalação do Visual Studio code não funcione. Se ocorrer erro, pode editar o script acima, apagar as linhas 3 até 7 e executar novamente. Em seguida, baixe o Visual Studio Code manualmente em http://code.visualstudio.com
+
+Crie uma conta no GitHub em https://github.com/signup. O nome de usuário se torna o link para sua conta pública, como http://github.com/manoelcampos. Por isso, escolha o nome apropriadamente.
+
+Qualquer dúvida, podem entrar em contato diretamente comigo.
+Para qualquer alteração em um projeto que você desejar enviar para o GitHub a partir da sua máquina, você precisará informar nome de usuário e senha. Isso se tornará um processo bastante chato e que toma tempo. Para evitar isso, na nossa máquina pessoal, podemos configurar a autenticação por meio de um par de chaves pública/privada. Para isto, siga o tutorial disponível https://youtu.be/Qp0lDxgoQE0[aqui]. 
