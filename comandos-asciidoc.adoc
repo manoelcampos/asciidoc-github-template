@@ -1,0 +1,27 @@
+= Resumo de Comandos AsciiDoc
+
+== Seções/Títulos, Numeração
+
+[source, asciidoc]
+----
+=
+==
+===
+====
+----
+
+== Marcadores (Numerados e Não numerados)
+
+== Itálico, Negrito, Sublinhado
+
+== Links
+
+== Tabelas
+
+== Vídeos
+
+== Notas, Ícones
+
+== Blocos de código fonte
+
+== Include, Trechos de arquivos

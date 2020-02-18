@@ -1,3 +1,15 @@
+:revealjsdir: https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0
+:revealjs_slideNumber: true
+:source-highlighter: highlightjs
+:icons: font
+:imagesdir: images
+:allow-uri-read:
+:stylesheet: adoc-github.css
+:safe: unsafe
+:numbered:
+:listing-caption: Listing
+:toc: left
+
 = Elaboração de material didático multimídia com AsciiDoc, git e GitHub
 
 == Instalação das ferramentas
@@ -14,4 +26,11 @@ Se sua distribuição for antiga ou não for 64 bits, pode ser que a instalaçã
 Crie uma conta no GitHub em https://github.com/signup. O nome de usuário se torna o link para sua conta pública, como http://github.com/manoelcampos. Por isso, escolha o nome apropriadamente.
 
 Qualquer dúvida, podem entrar em contato diretamente comigo.
-Para qualquer alteração em um projeto que você desejar enviar para o GitHub a partir da sua máquina, você precisará informar nome de usuário e senha. Isso se tornará um processo bastante chato e que toma tempo. Para evitar isso, na nossa máquina pessoal, podemos configurar a autenticação por meio de um par de chaves pública/privada. Para isto, siga o tutorial disponível https://youtu.be/Qp0lDxgoQE0[aqui]. 
+Para qualquer alteração em um projeto que você desejar enviar para o GitHub a partir da sua máquina, você precisará informar nome de usuário e senha. Isso se tornará um processo bastante chato e que toma tempo. Para evitar isso, na nossa máquina pessoal, podemos configurar a autenticação por meio de um par de chaves pública/privada. Para isto, siga o tutorial disponível https://youtu.be/Qp0lDxgoQE0[aqui].
+
+
+== Referências
+
+- https://asciidoctor.org/docs/
+- https://themes.asciidoctor.org/preview/
+- https://github.com/darshandsoni/asciidoctor-skins

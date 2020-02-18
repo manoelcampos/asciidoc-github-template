@@ -7,4 +7,4 @@ sudo apt update
 sudo apt install code -y
 
 sudo apt install ruby gem asciidoctor git -y
-sudo gem install asciidoctor-pdf
+sudo gem install asciidoctor-pdf asciidoctor-revealjs
