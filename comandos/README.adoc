@@ -43,18 +43,92 @@ Para numerar os títulos, basta adicionar a linha abaixo no topo do documento:
 :numbered:
 ----
 
-=== Marcadores (Numerados e Não numerados)
+=== Marcadores
 
-=== Itálico, Negrito, Sublinhado
+Para criar uma lista de marcadores, basta usar um hífen em cada linha:
+
+[source, asciidoc]
+----
+- Item A
+- Item B
+- Item C
+----
+
+Para numerar os itens, basta usar números ou apenas um 1 na frente de cada item:
+
+[source, asciidoc]
+----
+1. Item 1
+1. Item 2
+1. Item 3
+----
+
+=== _Itálico_ e *Negrito*
+
+[source, asciidoc]
+----
+_Itálico_
+*Negrito*
+----
 
 === Links
 
+[source, asciidoc]
+----
+link:documento.ext[Documento]
+----
+
+ou quando for link para uma página externa:
+
+[source, asciidoc]
+----
+http://google.com[Google]
+----
+
 === Tabelas
 
+[source, asciidoc]
+----
+|===
+| Coluna A  | Coluna B  | Coluna C
+| Célula A1 | Célula B1 | Célula C1 
+| Célula A2 | Célula B2 | Célula C2
+|===
+----
+
+|===
+| Coluna A  | Coluna B  | Coluna C
+| Célula A1 | Célula B1 | Célula C1 
+| Célula A2 | Célula B2 | Célula C2
+|===
+
+Veja que basta separar as colunas por `|` e iniciar e terminar a tabela com `|===`
+
+
 === Vídeos
+
+[source, asciidoc]
+----
+video::SALUHrZz2OQ[youtube]
+video::SALUHrZz2OQ[youtube, width=800, height=600]
+----
+
+video::SALUHrZz2OQ[youtube, width=800, height=600]
 
 === Notas, Ícones
 
 === Blocos de código fonte
+
+[source, asciidoc]
+----
+    [source, nome-linguagem-programacao-aqui]
+    ----
+    seu
+    código
+    fonte
+    aqui
+    ----
+----
+
 
 === Include, Trechos de arquivos
