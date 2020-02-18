@@ -1,4 +1,3 @@
-include::../config.adoc[]
 
 == Resumo de Comandos AsciiDoc
 
