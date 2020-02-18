@@ -3,7 +3,7 @@
 :source-highlighter: highlightjs
 :icons: font
 :imagesdir: /images
-:stylesheet: /adoc-github.css
+:stylesheet: adoc-github.css
 :numbered:
 :toc: left
 :toc-title: Sumário
