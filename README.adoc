@@ -45,13 +45,13 @@ Qualquer dúvida, podem entrar em contato diretamente comigo.
 Para qualquer alteração em um projeto que você desejar enviar para o GitHub a partir da sua máquina, você precisará informar nome de usuário e senha. Isso se tornará um processo bastante chato e que toma tempo. Para evitar isso, na nossa máquina pessoal, podemos configurar a autenticação por meio de um par de chaves pública/privada. Para isto, siga o tutorial disponível https://youtu.be/Qp0lDxgoQE0[aqui].
 
 ifdef::backend-pdf[]
-include::comandos-asciidoc.adoc[]
+include::comandos/README.adoc[]
 endif::[]
 
 ifndef::backend-pdf[]
 == Comandos AsciiDoc
 
-link:comandos-asciidoc[Um resumo dos comandos AsciiDoc está disponível aqui.]
+link:comandos[Um resumo dos comandos AsciiDoc está disponível aqui.]
 endif::[]
 
 
