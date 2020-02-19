@@ -237,7 +237,17 @@ Ela pode contar quantas linhas desejar.
 Você pode até ter linhas em branco.
 ====
 
-=== Blocos de código fonte
+=== Exibindo código
+
+Podemos exibir código em qualquer linguagem que desejarmos dentro de um arquivo adoc.
+Se precisamos exibir apenas uma única linha de código, basta envolver tal linha entre apóstrofos,
+como **pass:[`linha de código aqui`]**. O exemplo abaixo mostra um texto com um comando Linux no meio, tal comando envolvido em apóstrofos. Assim, o comando fica destacado.
+
+****
+O comando `sudo apt-get install asciidoctor` instala o compilador de AsciiDoc em sistemas Ubuntu e derivados de debian.
+****
+
+==== Exibindo blocos de código
 
 [source, asciidoc]
 ----
@@ -250,15 +260,18 @@ Você pode até ter linhas em branco.
     ----
 ----
 
-=== Include
+=== Incluindo arquivos externos no documento adoc
 
 Podemos incluir conteúdo de qualquer outro arquivo dentro de um arquivo adoc.
+Tais arquivos devem estar em formato de texto (como arquivos txt, arquivos de configuração, de código fonte, xml, json, sh, etc).
 
 [source, asciidoc]
 ----
     .Titulo opcional
     include::caminho-ou-url-do-arquivo[]
 ----
+
+Se usarmos o comando acima para incluírmos um documento adoc dentro de outro, não será exibido o código fonte adoc, mas sim o conteúdo final após o adoc ser compilado.
 
 IMPORTANT: O comando `include` ainda não funciona na interface do GitHub, apenas no GitHub Pages. No GitHub, ele vai apenas criar um link para o arquivo, no lugar de exibir seu conteúdo.
 
