@@ -2,7 +2,6 @@
 :revealjs_slideNumber: true
 :source-highlighter: highlightjs
 :icons: font
-:safe-mode: safe 
 :allow-uri-read:
 :imagesdir: ../images
 :stylesheet: ../adoc-golo.css
@@ -279,27 +278,27 @@ IMPORTANT: O comando `include` ainda não funciona na interface do GitHub, apena
 .Exemplo de cálculo do quadrado de um número em Java
 include::../Quadrado.java[]
 
-==== Incluindo arquivos de uma URL
+// ==== Incluindo arquivos de uma URL
 
-Para incluir arquivos externos a partir de uma URL, o comando é o mesmo acima,
-mas é preciso incluir as diretivas abaixo no topo do arquivo adoc para habilitar isto.
+// Para incluir arquivos externos a partir de uma URL, o comando é o mesmo acima,
+// mas é preciso incluir as diretivas abaixo no topo do arquivo adoc para habilitar isto.
 
-[source, asciidoc]
-----
-:safe-mode: safe 
-:allow-uri-read:
-----
+// [source, asciidoc]
+// ----
+// :safe-mode: safe 
+// :allow-uri-read:
+// ----
 
-Assim, podemos incluir um arquivo como:
+// Assim, podemos incluir um arquivo como:
 
-[source, asciidoc]
-----
-    .Titulo opcional
-    include::https://raw.githubusercontent.com/manoelcampos/xml2lua/master/people.xml[]
-----
+// [source, asciidoc]
+// ----
+//     .Titulo opcional
+//     include::https://raw.githubusercontent.com/manoelcampos/xml2lua/master/people.xml[]
+// ----
 
-.Exemplo de arquivo XML incluído a partir de um URL qualquer
-include::https://raw.githubusercontent.com/manoelcampos/xml2lua/master/people.xml[]
+// .Exemplo de arquivo XML incluído a partir de um URL qualquer
+// include::https://raw.githubusercontent.com/manoelcampos/xml2lua/master/people.xml[]
 
 ==== Incluindo apenas trechos de um arquivo
 
