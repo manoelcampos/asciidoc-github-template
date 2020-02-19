@@ -175,11 +175,15 @@ image:horizontal-scaling-small.gif[]
 
 [source, asciidoc]
 ----
+.Título Opcional
+video::SALUHrZz2OQ[youtube]
+
 video::SALUHrZz2OQ[youtube]
 
 video::SALUHrZz2OQ[youtube, width=640, height=480]
 ----
 
+.Locks otimistas em aplicações de bancos de dados
 video::SALUHrZz2OQ[youtube, width=640, height=480]
 
 === Notas
@@ -231,8 +235,6 @@ Ela pode contar quantas linhas desejar.
 Você pode até ter linhas em branco.
 ====
 
-
-
 === Blocos de código fonte
 
 [source, asciidoc]
@@ -247,7 +249,7 @@ Você pode até ter linhas em branco.
 ----
 
 
-=== Include, Trechos de arquivos
+=== Include
 
 Podemos incluir conteúdo de qualquer outro arquivo dentro de um arquivo adoc.
 
@@ -259,6 +261,45 @@ Podemos incluir conteúdo de qualquer outro arquivo dentro de um arquivo adoc.
 
 IMPORTANT: O comando `include` ainda não funciona na interface do GitHub, apenas no GitHub Pages. No GitHub, ele vai apenas criar um link para o arquivo, no lugar de exibir seu conteúdo.
 
-
 .Exemplo de cálculo do quadrado de um número em Java
 include::../Quadrado.java[]
+
+==== Incluindo apenas trechos de um arquivo
+
+Se desejarmos incluir apenas um determinado trecho de um arquivo no nosso documento adoc,
+podemos delimitar tal trecho dentro do arquivo por meio de uma tag.
+A tag deve ter um nome, como desejarmos.
+Se desejarmos incluir um trecho de um arquivo de código fonte como Java, a abertura e fechamento da tag deve estar comentada.
+Como a tag representa código AsciiDoc e não código Java, se não comentarmos a tag, o código Java não irá compilar.
+
+Depois de escolher o nome para sua tag, para abrir e fechá-la dentro do arquivo de código fonte,
+basta incluir a linha `// tag::nome_da_tag[]` no início e no fim do bloco de código que deseja incluir.
+
+[source, asciidoc]
+----
+// tag::nome_da_tag[]
+Linhas de código
+dentro de arquivo de código fonte,
+que desejamos exibir apenas o trecho envolvido na tag
+// tag::nome_da_tag[]
+----
+
+Veja que foi usado `//` para comentar a tag pois nosso exemplo é com Java.
+Assim, o arquivo Java fica como abaixo:
+
+****
+include::../Teclado.java[]
+****
+
+Veja que o nome da tag foi chamada de main, justamente por envolver apenas o método `main()` da classe Java de exemplo.
+Para então exibir apenas o trecho delimitado pela tag no arquivo de código fonte, podemos fazer:
+
+[source, asciidoc]
+----
+    .Titulo opcional
+    include::caminho-ou-url-do-arquivo[tag=nome_da_tag]
+----
+
+O resultado é então como abaixo:
+
+include::../Teclado.java[tag=main]
