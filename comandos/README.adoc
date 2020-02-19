@@ -104,6 +104,26 @@ http://google.com[Google]
 
 Veja que basta separar as colunas por `|` e iniciar e terminar a tabela com `|===`
 
+=== Imagens
+
+Imagem no meio do texto.
+
+[source, asciidoc]
+----
+image:url-ou-endereço-local[]
+----
+
+image:evolution-of-man-and-computer.jpg[]
+
+Imagem em bloco (em um linha separada)
+
+[source, asciidoc]
+----
+image::url-ou-endereço-local[]
+----
+
+
+horizontal-scaling-small.gif
 
 === Vídeos
 
