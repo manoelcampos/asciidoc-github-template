@@ -2,7 +2,8 @@
 :revealjs_slideNumber: true
 :source-highlighter: highlightjs
 :icons: font
-:safe: unsafe
+:safe-mode: unsafe 
+:allow-uri-read:
 :imagesdir: ../images
 :stylesheet: ../adoc-golo.css
 :numbered:
@@ -281,7 +282,14 @@ include::../Quadrado.java[]
 ==== Incluindo arquivos de uma URL
 
 Para incluir arquivos externos a partir de uma URL, o comando é o mesmo acima,
-mas é preciso incluir a diretiva `:safe: unsafe` no topo do arquivo para habilitar isto.
+mas é preciso incluir as diretivas abaixo no topo do arquivo adoc para habilitar isto.
+
+[source, asciidoc]
+----
+:safe-mode: unsafe 
+:allow-uri-read:
+----
+
 Assim, podemos incluir um arquivo como:
 
 [source, asciidoc]

@@ -2,7 +2,8 @@
 :revealjs_slideNumber: true
 :source-highlighter: highlightjs
 :icons: font
-:safe: unsafe
+:safe-mode: unsafe 
+:allow-uri-read:
 :imagesdir: /images
 :stylesheet: adoc-golo.css
 :numbered:
