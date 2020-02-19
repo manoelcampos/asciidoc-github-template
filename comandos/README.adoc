@@ -2,6 +2,7 @@
 :revealjs_slideNumber: true
 :source-highlighter: highlightjs
 :icons: font
+:safe: unsafe
 :imagesdir: ../images
 :stylesheet: ../adoc-golo.css
 :numbered:
@@ -183,6 +184,8 @@ video::SALUHrZz2OQ[youtube, width=640, height=480]
 
 === Notas
 
+Existem 5 tipos de notas, que são blocos no meio do texto para chamar a atenção para algo. A forma simplificada não permite quebra de linha no texto.
+
 [source, asciidoc]
 ----
 NOTE: Texto da nota aqui.
@@ -206,6 +209,28 @@ CAUTION: Este é um alerta qualquer.
 
 IMPORTANT: Esta é uma informação importante.
 
+==== Notas em Blocos (com quebra de linha)
+
+[source, asciidoc]
+----
+    [NOTE]
+    ====
+    Sua nota aqui.
+    Ela pode contar quantas linhas desejar.
+
+    Você pode até ter linhas em branco.
+    ====
+
+----
+
+[NOTE]
+====
+Sua nota aqui.
+Ela pode contar quantas linhas desejar.
+
+Você pode até ter linhas em branco.
+====
+
 
 
 === Blocos de código fonte
@@ -223,3 +248,17 @@ IMPORTANT: Esta é uma informação importante.
 
 
 === Include, Trechos de arquivos
+
+Podemos incluir conteúdo de qualquer outro arquivo dentro de um arquivo adoc.
+
+[source, asciidoc]
+----
+    .Titulo opcional
+    include::caminho-ou-url-do-arquivo[]
+----
+
+IMPORTANT: O comando `include` ainda não funciona na interface do GitHub, apenas no GitHub Pages. No GitHub, ele vai apenas criar um link para o arquivo, no lugar de exibir seu conteúdo.
+
+
+.Exemplo de cálculo do quadrado de um número em Java
+include::../Quadrado.java[]
