@@ -45,7 +45,7 @@ Para numerar os títulos, basta adicionar a linha abaixo no topo do documento:
 
 === Marcadores
 
-Para criar uma lista de marcadores, basta usar um hífen em cada linha:
+==== Para criar uma lista de marcadores, basta usar um hífen em cada linha:
 
 [source, asciidoc]
 ----
@@ -54,7 +54,7 @@ Para criar uma lista de marcadores, basta usar um hífen em cada linha:
 - Item C
 ----
 
-Para numerar os itens, basta usar números ou apenas um 1 na frente de cada item:
+==== Para numerar os itens, basta usar números ou apenas um 1 na frente de cada item:
 
 [source, asciidoc]
 ----
@@ -73,17 +73,26 @@ _Itálico_
 
 === Links
 
+==== Link para documento local
+
 [source, asciidoc]
 ----
 link:documento.ext[Documento]
 ----
 
-ou quando for link para uma página externa:
+link:websockets.pptx[Apresentação sobre WebSockets]
+
+==== Link para página externa
 
 [source, asciidoc]
 ----
-http://google.com[Google]
+http://palmas.ifto.edu.br
+http://palmas.ifto.edu.br[IFTO Palmas]
 ----
+
+http://ifto.edu.br
+
+http://palmas.ifto.edu.br[IFTO Palmas]
 
 === Tabelas
 
@@ -110,20 +119,50 @@ Imagem no meio do texto.
 
 [source, asciidoc]
 ----
-image:url-ou-endereço-local[]
+Um texto image:url-ou-endereço-local[] qualquer aqui.
 ----
 
-image:evolution-of-man-and-computer.jpg[]
+Esta imagem image:evolution-of-man-and-computer.jpg[] mostra a evolução do homem e dos computadores.
 
 Imagem em bloco (em um linha separada)
 
 [source, asciidoc]
 ----
+Um texto aqui.
+
+image::url-ou-endereço-local[]
+
+Outro texto aqui. Observe as linhas em branco antes e depois.
+----
+
+A imagem não pode ficar junto com o texto.
+
+image::thread-selectors.png[]
+
+Ela deve ficar em uma linha separada.
+
+==== Imagem com Título
+
+[source, asciidoc]
+----
+.Título da Imagem aqui
 image::url-ou-endereço-local[]
 ----
 
+.Hard Disk Drive - HDD (Fonte: Wikipedia)
+image::https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Laptop-hard-drive-exposed.jpg/314px-Laptop-hard-drive-exposed.jpg[]
 
-horizontal-scaling-small.gif
+==== Gifs animados
+
+Pode-se usar qualquer uma das formas acima, por exemplo:
+
+[source, asciidoc]
+----
+image:url-ou-endereço-local[]
+----
+
+image:horizontal-scaling-small.gif[]
+
 
 === Vídeos
 
@@ -135,7 +174,20 @@ video::SALUHrZz2OQ[youtube, width=800, height=600]
 
 video::SALUHrZz2OQ[youtube, width=800, height=600]
 
-=== Notas, Ícones
+=== Notas
+
+[source, asciidoc]
+----
+NOTE::Texto aqui[]
+* TIP
+* WARNING
+* CAUTION
+* IMPORTANT
+
+----
+
+NOTE::Texto aqui
+
 
 === Blocos de código fonte
 

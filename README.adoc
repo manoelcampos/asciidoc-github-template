@@ -55,6 +55,6 @@ endif::[]
 
 == Referências
 
-- https://asciidoctor.org/docs/[Documentação oficial do AsciiDoc]
-- https://themes.asciidoctor.org/preview/[AsciiDoc Writer’s Guide]
+- https://asciidoctor.org/docs/asciidoc-writers-guide/[AsciiDoc Official Writer’s Guide]
+- https://asciidoctor.org/docs/[Toda a Documentação oficial do AsciiDoc]
 - https://github.com/darshandsoni/asciidoctor-skins[Temas em CSS]
