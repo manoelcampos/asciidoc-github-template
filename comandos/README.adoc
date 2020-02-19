@@ -58,7 +58,7 @@ Para numerar os títulos, basta adicionar a linha abaixo no topo do documento:
 - Item C
 ----
 
-==== Para numerar os itens, basta usar números ou apenas um 1 na frente de cada item:
+==== Para numerar os itens, basta usar números sequenciais ou apenas um 1 na frente de cada item:
 
 [source, asciidoc]
 ----
@@ -130,12 +130,13 @@ Um texto image:url-ou-endereço-local[] qualquer aqui.
 
 Esta imagem image:evolution-of-man-and-computer.jpg[] mostra a evolução do homem e dos computadores.
 
-Imagem em bloco (em um linha separada)
+==== Imagem em bloco (em um linha separada)
 
 [source, asciidoc]
 ----
 Um texto aqui.
 
+.Título Opcional
 image::url-ou-endereço-local[]
 
 Outro texto aqui. Observe as linhas em branco antes e depois.
@@ -143,6 +144,7 @@ Outro texto aqui. Observe as linhas em branco antes e depois.
 
 A imagem não pode ficar junto com o texto.
 
+.Seletores para execução de tarefas concorrentes em uma Thread
 image::thread-selectors.png[]
 
 Ela deve ficar em uma linha separada.
@@ -248,7 +250,6 @@ Você pode até ter linhas em branco.
     ----
 ----
 
-
 === Include
 
 Podemos incluir conteúdo de qualquer outro arquivo dentro de um arquivo adoc.
@@ -263,6 +264,21 @@ IMPORTANT: O comando `include` ainda não funciona na interface do GitHub, apena
 
 .Exemplo de cálculo do quadrado de um número em Java
 include::../Quadrado.java[]
+
+==== Incluindo arquivos de uma URL
+
+Para incluir arquivos externos a partir de uma URL, o comando é o mesmo acima,
+mas é preciso incluir a diretiva `:safe: unsafe` no topo do arquivo para habilitar isto.
+Assim, podemos incluir um arquivo como:
+
+[source, asciidoc]
+----
+    .Titulo opcional
+    include::https://raw.githubusercontent.com/manoelcampos/xml2lua/master/people.xml[]
+----
+
+.Exemplo de arquivo XML incluído a partir de um URL qualquer
+include::https://raw.githubusercontent.com/manoelcampos/xml2lua/master/people.xml[]
 
 ==== Incluindo apenas trechos de um arquivo
 
@@ -302,4 +318,5 @@ Para então exibir apenas o trecho delimitado pela tag no arquivo de código fon
 
 O resultado é então como abaixo:
 
+.Capturando dados do teclado em Java
 include::../Teclado.java[tag=main]
