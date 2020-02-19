@@ -31,8 +31,11 @@ endif::[]
 [source, asciidoc]
 ----
 = Título
+
 == Título 1
+
 === Título 2
+
 ==== Título 3
 ----
 
@@ -68,6 +71,7 @@ Para numerar os títulos, basta adicionar a linha abaixo no topo do documento:
 [source, asciidoc]
 ----
 _Itálico_
+
 *Negrito*
 ----
 
@@ -80,7 +84,7 @@ _Itálico_
 link:documento.ext[Documento]
 ----
 
-link:websockets.pptx[Apresentação sobre WebSockets]
+link:../websockets.pptx[Apresentação sobre WebSockets]
 
 ==== Link para página externa
 
@@ -111,7 +115,8 @@ http://palmas.ifto.edu.br[IFTO Palmas]
 | Célula A2 | Célula B2 | Célula C2
 |===
 
-Veja que basta separar as colunas por `|` e iniciar e terminar a tabela com `|===`
+Veja que basta separar as colunas por `|` e iniciar e terminar a tabela com `|===`.
+Você pode destacar os títulos usando negrito, por exemplo, como pass:[**Coluna A**].
 
 === Imagens
 
@@ -158,35 +163,49 @@ Pode-se usar qualquer uma das formas acima, por exemplo:
 
 [source, asciidoc]
 ----
+.Titulo
 image:url-ou-endereço-local[]
 ----
 
+.Escalonamento horizontal de serviços
 image:horizontal-scaling-small.gif[]
-
 
 === Vídeos
 
 [source, asciidoc]
 ----
 video::SALUHrZz2OQ[youtube]
-video::SALUHrZz2OQ[youtube, width=800, height=600]
+
+video::SALUHrZz2OQ[youtube, width=640, height=480]
 ----
 
-video::SALUHrZz2OQ[youtube, width=800, height=600]
+video::SALUHrZz2OQ[youtube, width=640, height=480]
 
 === Notas
 
 [source, asciidoc]
 ----
-NOTE::Texto aqui[]
-* TIP
-* WARNING
-* CAUTION
-* IMPORTANT
+NOTE: Texto da nota aqui.
 
+TIP: Texto da dica aqui.
+
+WARNING: Texto do aviso aqui.
+
+CAUTION: Texto de alerta aqui.
+
+IMPORTANT: Texto importante aqui.
 ----
 
-NOTE::Texto aqui
+NOTE: Esta é uma nota qualquer.
+
+TIP: Esta é uma dica qualquer.
+
+WARNING: Este é um aviso qualquer.
+
+CAUTION: Este é um alerta qualquer.
+
+IMPORTANT: Esta é uma informação importante.
+
 
 
 === Blocos de código fonte
