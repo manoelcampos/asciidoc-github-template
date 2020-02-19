@@ -9,5 +9,5 @@ public class Teclado{
         String nome = scanner.nextLine();
         System.out.println("Olá " + nome);
     }
-    // tag::main[]
+    // end::main[]
 }

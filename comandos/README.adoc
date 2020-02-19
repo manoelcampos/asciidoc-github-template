@@ -284,12 +284,12 @@ include::https://raw.githubusercontent.com/manoelcampos/xml2lua/master/people.xm
 
 Se desejarmos incluir apenas um determinado trecho de um arquivo no nosso documento adoc,
 podemos delimitar tal trecho dentro do arquivo por meio de uma tag.
-A tag deve ter um nome, como desejarmos.
+A tag deve ter um nome, como preferirmos.
 Se desejarmos incluir um trecho de um arquivo de código fonte como Java, a abertura e fechamento da tag deve estar comentada.
 Como a tag representa código AsciiDoc e não código Java, se não comentarmos a tag, o código Java não irá compilar.
 
-Depois de escolher o nome para sua tag, para abrir e fechá-la dentro do arquivo de código fonte,
-basta incluir a linha `// tag::nome_da_tag[]` no início e no fim do bloco de código que deseja incluir.
+Depois de escolher o nome para sua tag, para delimitar o bloco de código que podemos selecionar para exibir no documento adoc,
+basta delimitar tal bloco com as linhas `// tag::nome_da_tag[]` e `// end::nome_da_tag[]`, como no exemplo a seguir.
 
 [source, asciidoc]
 ----
@@ -297,7 +297,7 @@ basta incluir a linha `// tag::nome_da_tag[]` no início e no fim do bloco de c�
 Linhas de código
 dentro de arquivo de código fonte,
 que desejamos exibir apenas o trecho envolvido na tag
-// tag::nome_da_tag[]
+// end::nome_da_tag[]
 ----
 
 Veja que foi usado `//` para comentar a tag pois nosso exemplo é com Java.
@@ -320,3 +320,27 @@ O resultado é então como abaixo:
 
 .Capturando dados do teclado em Java
 include::../Teclado.java[tag=main]
+
+==== Destacando código fonte incluído a partir de um arquivo
+
+Em todos os exemplos de inclusão de arquivos de código fonte externo,
+você pode notar que o código não foi destacado (colorido). Para fazer isto,
+basta colocar o `include` dentro de um bloco `[source]`, indicando 
+o tipo de conteúdo do arquivo (no exemplo, java) como abaixo:
+
+[source, asciidoc]
+----
+    .Titulo opcional
+    [source, java]
+    ----
+    include::caminho-ou-url-do-arquivo[tag=nome_da_tag]
+    ----
+----
+
+Observe que o título (se tiver), agora deve ficar no bloco `source` e não no comando `include`. O resultado fica então:
+
+.Capturando dados do teclado em Java (veja que o código agora está colorido)
+[source, java]
+----
+include::../Teclado.java[]
+----
