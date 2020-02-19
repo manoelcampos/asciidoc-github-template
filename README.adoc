@@ -3,7 +3,7 @@
 :source-highlighter: highlightjs
 :icons: font
 :imagesdir: /images
-:stylesheet: adoc-github.css
+:stylesheet: adoc-golo.css
 :numbered:
 :toc: left
 :toc-title: Sumário
@@ -55,6 +55,6 @@ endif::[]
 
 == Referências
 
-- https://asciidoctor.org/docs/
-- https://themes.asciidoctor.org/preview/
-- https://github.com/darshandsoni/asciidoctor-skins
+- https://asciidoctor.org/docs/[Documentação oficial do AsciiDoc]
+- https://themes.asciidoctor.org/preview/[AsciiDoc Writer’s Guide]
+- https://github.com/darshandsoni/asciidoctor-skins[Temas em CSS]
