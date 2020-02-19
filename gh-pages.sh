@@ -39,7 +39,7 @@ echo ""
 #done
 
 echo "Converting AsciiDoc files to HTML"
-find . -name "*.adoc" | xargs asciidoctor -b html 
+find . -name "*.adoc" | xargs asciidoctor --safe-mode=unsafe -b html 
 
 for FILE in `find . -name "README.html"`; do 
     mv "$FILE" "`dirname $FILE`/index.html"; 
