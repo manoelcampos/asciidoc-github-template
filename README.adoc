@@ -25,9 +25,9 @@ endif::[]
 :listing-caption: Listagem
 :figure-caption: Figura
 
-= Elaboração de material didático multimídia com AsciiDoc, git e GitHub
+= Elaboração de Material Didático Multimídia com AsciiDoc, git e GitHub
 
-== Instalação das ferramentas
+== Instalação das Ferramentas
 
 Execute o script link:ferramentas.sh[ferramentas.sh] em um terminal com sistema Ubuntu ou qualquer derivado de Debian: 
 
