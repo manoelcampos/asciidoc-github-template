@@ -27,7 +27,14 @@ endif::[]
 
 = Elaboração de Material Didático Multimídia com AsciiDoc, git e GitHub
 
-== Instalação das Ferramentas
+Este repositório serve como um template para a criação de material didático multimídia utilizando
+AsciiDoc e hospedando no GitHub Pages.
+Ele apresenta instruções de como configurar seu ambiente de desenvolvimento
+para poder escrever conteúdo em AsciiDoc e publicar no GitHub Pages.
+Adicionalmente, há um resumo dos comandos AsciiDoc para quem estiver iniciando
+na produção de conteúdo neste formato.
+
+== Instalação das Ferramentas no seu Ambiente de Desenvolvimento
 
 Execute o script link:ferramentas.sh[ferramentas.sh] em um terminal com sistema Ubuntu ou qualquer derivado de Debian: 
 
@@ -63,6 +70,19 @@ ifndef::backend-pdf[]
 link:comandos[Um resumo dos comandos AsciiDoc está disponível aqui.]
 endif::[]
 
+== Licença
+
+Este repositório não possui uma licença definida e você pode utilizar o conteúdo dele livremente
+para criar seu próprio repositório. Assim, não é preciso dar qualquer tipo de crédito por ter utilizado
+este projeto (a menos que realmente queira).
+
+Você pode utilizar tal repositório como bem desejar, sem qualquer tipo de limitação.
+No entanto, o repositório é fornecido como está e nenhuma responsabilidade será
+atribuída ao autor do mesmo.
+
+Ao produzir seu conteúdo multimídia a partir deste respositório,
+é importante adicionar um arquivo LICENSE e assim definir
+explicitamente uma licença para o conteúdo que você produzir.
 
 == Referências
 
