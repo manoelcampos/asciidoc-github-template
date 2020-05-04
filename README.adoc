@@ -69,7 +69,7 @@ endif::[]
 ifndef::backend-pdf[]
 == Comandos AsciiDoc
 
-link:comandos.html[Um resumo dos comandos AsciiDoc está disponível aqui.]
+xref:comandos.adoc[Um resumo dos comandos AsciiDoc está disponível aqui.]
 endif::[]
 
 == Licença

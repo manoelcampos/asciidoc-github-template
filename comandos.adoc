@@ -100,6 +100,33 @@ http://ifto.edu.br
 
 http://palmas.ifto.edu.br[IFTO Palmas]
 
+==== Link para outros arquivos asciidoc
+
+Se você usar a tag link para outro arquivo `.adoc`, tal link só funcionará na interface do GitHub.
+Por outro lado, se você está compilando os AsciiDocs para HTML e hospedando como um site convencional
+em qualquer lugar como o GitHub Pages (que não exibe a interface do GitHub),
+tais links não funcionarão, pois o navegador não interpreta arquivos `.adoc`,
+somente sites como o GitHub tem essa capacidade.
+
+Por outro lado, se você colocar o link com extensão `.html`, vai funcionar na sua hospedagem
+mas não vai funcionar na interface padrão do GitHub.
+Para resolver esse dilema, neste caso, use o comando `xref` no lugar de `link`.
+A estrutura é exatamente a mesma:
+
+[source, asciidoc]
+----
+xref:documento.adoc[Documento AsciiDoc]
+----
+
+Tal comando vai gerar um link, incluindo a extensão apropriada, dependendo de onde e como o arquivo AsciiDoc está sendo aberto.
+Mas para isso funcionar, é preciso incluir o comando `if` abaixo no topo de cada documento:
+
+----
+\ifdef::env-github,env-browser[]
+:outfilesuffix: .adoc
+\endif::[]
+----
+
 === Tabelas
 
 [source, asciidoc]
