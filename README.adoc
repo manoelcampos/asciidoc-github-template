@@ -36,6 +36,11 @@ para poder escrever conteúdo em AsciiDoc e publicar no GitHub Pages.
 Adicionalmente, há um resumo dos comandos AsciiDoc para quem estiver iniciando
 na produção de conteúdo neste formato.
 
+Assim, utilize este arquivo README.adoc como exemplo pois ele já está configurado.
+Para criar seu próprio conteúdo, basta apagar o texto neste arquivo e incluir
+o seu. Quando for criar novos arquivos, basta copiar o README.adoc anterior
+e iniciar a partir daí.
+
 == Instalação das Ferramentas no seu Ambiente de Desenvolvimento
 
 Execute o script link:ferramentas.sh[ferramentas.sh] em um terminal com sistema Ubuntu ou qualquer derivado de Debian: 
