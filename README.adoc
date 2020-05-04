@@ -10,9 +10,11 @@
 :toc-title: Sumário
 :toclevels: 5
 
-ifdef::env-github[]
-//Exibe ícones para os blocos como NOTE e IMPORTANT no GitHub
 
+ifdef::env-github,env-browser[]
+:outfilesuffix: .adoc
+
+//Exibe ícones para os blocos como NOTE e IMPORTANT no GitHub
 :caution-caption: :fire:
 :important-caption: :exclamation:
 :note-caption: :paperclip:
@@ -61,13 +63,13 @@ video::j7lX9ff9rC8[youtube, width=640, height=480]
 endif::[]
 
 ifdef::backend-pdf[]
-include::comandos/README.adoc[]
+include::comandos.adoc[]
 endif::[]
 
 ifndef::backend-pdf[]
 == Comandos AsciiDoc
 
-link:comandos[Um resumo dos comandos AsciiDoc está disponível aqui.]
+link:comandos.html[Um resumo dos comandos AsciiDoc está disponível aqui.]
 endif::[]
 
 == Licença

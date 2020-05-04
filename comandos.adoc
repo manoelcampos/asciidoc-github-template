@@ -3,16 +3,17 @@
 :source-highlighter: highlightjs
 :icons: font
 :allow-uri-read:
-:imagesdir: ../images
-:stylesheet: ../adoc-golo.css
+:imagesdir: /images
+:stylesheet: adoc-golo.css
 :numbered:
 :toc: left
 :toc-title: Sumário
 :toclevels: 5
 
-ifdef::env-github[]
-//Exibe ícones para os blocos como NOTE e IMPORTANT no GitHub
+ifdef::env-github,env-browser[]
+:outfilesuffix: .adoc
 
+//Exibe ícones para os blocos como NOTE e IMPORTANT no GitHub
 :caution-caption: :fire:
 :important-caption: :exclamation:
 :note-caption: :paperclip:
@@ -85,7 +86,7 @@ _Itálico_
 link:documento.ext[Documento]
 ----
 
-link:../websockets.pptx[Apresentação sobre WebSockets]
+link:websockets.pptx[Apresentação sobre WebSockets]
 
 ==== Link para página externa
 
@@ -226,7 +227,6 @@ IMPORTANT: Esta é uma informação importante.
 
     Você pode até ter linhas em branco.
     ====
-
 ----
 
 [NOTE]
@@ -276,7 +276,7 @@ Se usarmos o comando acima para incluírmos um documento adoc dentro de outro, n
 IMPORTANT: O comando `include` ainda não funciona na interface do GitHub, apenas no GitHub Pages. No GitHub, ele vai apenas criar um link para o arquivo, no lugar de exibir seu conteúdo.
 
 .Exemplo de cálculo do quadrado de um número em Java
-include::../Quadrado.java[]
+include::Quadrado.java[]
 
 // ==== Incluindo arquivos de uma URL
 
@@ -324,7 +324,7 @@ Veja que foi usado `//` para comentar a tag pois nosso exemplo é com Java.
 Assim, o arquivo Java fica como abaixo:
 
 ****
-include::../Teclado.java[]
+include::Teclado.java[]
 ****
 
 Veja que o nome da tag foi chamada de main, justamente por envolver apenas o método `main()` da classe Java de exemplo.
@@ -339,7 +339,7 @@ Para então exibir apenas o trecho delimitado pela tag no arquivo de código fon
 O resultado é então como abaixo:
 
 .Capturando dados do teclado em Java
-include::../Teclado.java[tag=main]
+include::Teclado.java[tag=main]
 
 ==== Destacando código fonte incluído a partir de um arquivo
 
@@ -362,5 +362,5 @@ Observe que o título (se tiver), agora deve ficar no bloco `source` e não no c
 .Capturando dados do teclado em Java (veja que o código agora está colorido)
 [source, java]
 ----
-include::../Teclado.java[]
+include::Teclado.java[]
 ----
