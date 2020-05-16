@@ -50,7 +50,7 @@ Execute o script link:ferramentas.sh[ferramentas.sh] em um terminal com sistema 
 sh ferramentas.sh
 ----
 
-Se sua distribuição for antiga ou não for 64 bits, pode ser que a instalação do Visual Studio code não funcione. Se ocorrer erro, pode editar o script acima, apagar as linhas 3 até 7 e executar novamente. Em seguida, baixe o Visual Studio Code manualmente em http://code.visualstudio.com
+Se sua distribuição for antiga ou não for 64 bits, pode ser que a instalação do Visual Studio code não funcione. Se ocorrer erro, baixe o Visual Studio Code manualmente em http://code.visualstudio.com
 
 Crie uma conta no GitHub em https://github.com/signup. O nome de usuário se torna o link para sua conta pública, como http://github.com/manoelcampos. Por isso, escolha o nome apropriadamente.
 
