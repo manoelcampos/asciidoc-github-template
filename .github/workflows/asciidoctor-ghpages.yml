@@ -23,7 +23,7 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: Asciidoctor Setup
-      run: sudo apt install asciidoctor -y   
+      run: sudo apt-get install asciidoctor -y   
 
     - name: Performs the adoc to html convertion and publish to GitHub Pages
       run: ./gh-pages.sh
