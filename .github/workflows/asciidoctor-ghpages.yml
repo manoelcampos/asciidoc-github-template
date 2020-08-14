@@ -31,4 +31,4 @@ jobs:
       run: sudo apt-get install asciidoctor -y   
 
     - name: Performs the adoc to html convertion and publish to GitHub Pages
-      run: ./gh-pages.sh
+      run: .github/workflows/asciidoctor-ghpages.sh
