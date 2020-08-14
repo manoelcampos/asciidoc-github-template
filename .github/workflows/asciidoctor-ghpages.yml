@@ -36,10 +36,10 @@ jobs:
     - name: Checking out the gh-pages branch without keep its history
       run: |
         git branch -D gh-pages 1>/dev/null 2>/dev/null
-        git checkout --orphan gh-pages master 1>/dev/null || (echo "It was not possible to change to gh-pages branch" >&2 && exit -1)
+        git checkout --orphan gh-pages master 1>/dev/null
 
     #- name: Checking out the gh-pages branch, keeping its history
-    #  run: git checkout master -B gh-pages 1>/dev/null || (echo "It was not possible to change to gh-pages branch" >&2  && exit -1)
+    #  run: git checkout master -B gh-pages 1>/dev/null
 
     - name: Converting AsciiDoc files to HTML
       run: |
