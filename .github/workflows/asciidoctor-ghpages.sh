@@ -1,7 +1,7 @@
 #!/bin/bash
 
-git --version || (echo "git is not installed" && exit -1)
-asciidoctor -v | head -n 1 || (echo "asciidoctor is not installed" && exit -1)
+git --version || (echo "git is not installed" >&2 && exit -1)
+asciidoctor -v | head -n 1 || (echo "asciidoctor is not installed" >&2 && exit -1)
 echo ""
 
 echo "Building GitHub Pages into gh-pages branch."
@@ -18,10 +18,10 @@ fi
 if [[ $1 == "--no-history" || $1 == "-nh" ]]; then
     git branch -D gh-pages 1>/dev/null 2>/dev/null
     echo "The history for the gh-pages branch won't be kept."
-    git checkout --orphan gh-pages master 1>/dev/null || (echo "It was not possible to change to gh-pages branch" && exit -1)
+    git checkout --orphan gh-pages master 1>/dev/null || (echo "It was not possible to change to gh-pages branch" >&2 && exit -1)
 else
     echo "Change history in the gh-pages branch will be kept."
-    git checkout master -B gh-pages 1>/dev/null || (echo "It was not possible to change to gh-pages branch" && exit -1)
+    git checkout master -B gh-pages 1>/dev/null || (echo "It was not possible to change to gh-pages branch" >&2  && exit -1)
 fi
 echo ""
 
