@@ -23,12 +23,7 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: Asciidoctor Setup
-      uses: reitzig/actions-asciidoctor@v1.0.0
-      with:
-        version: 2.0.10
-        # Any options every run of asciidoctor should use.
-        #Example: "-a experimental=true -d inline"
-        #options:
+      run: sudo apt install asciidoctor -y   
 
     - name: Performs the adoc to html convertion and publish to GitHub Pages
       run: ./gh-pages.sh
