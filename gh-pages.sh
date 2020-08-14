@@ -12,9 +12,9 @@ if [[ $1 == "--help" || $1 == "-h" || $1 == "/h" ]]; then
     exit 0;
 fi
 
-#Pass --no-history or -h to don't keep change history for the gh-pages branch.
-#Using that parameter, that branch will keep only the last commit,
-#but this slows down the process the build the website for GitHub Pages.
+#Pass --no-history or -h to avoid keeping the "changing history" for the gh-pages branch.
+#Using that parameter, the gh-pages branch will keep only the last commit,
+#but this slows down the GitHub Pages website build process.
 if [[ $1 == "--no-history" || $1 == "-nh" ]]; then
     git branch -D gh-pages 1>/dev/null 2>/dev/null
     echo "The history for the gh-pages branch won't be kept."
