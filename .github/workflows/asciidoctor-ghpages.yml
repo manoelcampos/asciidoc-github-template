@@ -22,6 +22,11 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
 
+    - name: Configure git
+      run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+
     - name: Asciidoctor Setup
       run: sudo apt-get install asciidoctor -y   
 
