@@ -75,9 +75,18 @@ endif::[]
 ifndef::backend-pdf[]
 == Comandos AsciiDoc
 
-// xref:comandos.adoc[Um resumo dos comandos AsciiDoc está disponível aqui.]
+// A sintaxe abaixo tambem gera um link como o comando link::[],
+// mas neste caso apontando diretamente para o arquivo comandos.adoc
+// Usando tal sintaxe, se estivermos na interface do GitHub ou em um
+// arquivo html gerado a partir de um adoc,
+// a extensão .adoc será substituída por html.
 
 <<comandos#,Um resumo dos comandos AsciiDoc está disponível aqui.>>
+
+// O comando xref deveria fazer o mesmo, mas não está funcionando
+// quando o adoc é convertido para html fora da interface do GitHub (como no GitHub Pages por exemplo)
+// xref:comandos.adoc[Um resumo dos comandos AsciiDoc está disponível aqui.]
+
 endif::[]
 
 == Licença
