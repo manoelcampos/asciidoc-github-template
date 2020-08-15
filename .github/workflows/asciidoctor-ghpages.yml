@@ -33,9 +33,9 @@ jobs:
     #Avoids keeping the "changing history" for the gh-pages branch, 
     #so that such a branch keeps only the last commit. 
     #But this slows down the GitHub Pages website build process.
-    - name: Checking out the gh-pages branch without keep its history
+    - name: Checking out the gh-pages branch without keeping its history
       run: |
-        git branch -D gh-pages 1>/dev/null 2>/dev/null
+        git branch -D gh-pages 1>/dev/null 2>/dev/null || true
         git checkout --orphan gh-pages master 1>/dev/null
 
     #- name: Checking out the gh-pages branch, keeping its history
