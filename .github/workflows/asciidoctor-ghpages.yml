@@ -56,6 +56,6 @@ jobs:
       run: |
         MSG="Build AsciiDoc Files for GitHub Pages from commit `cat /tmp/commit-hash.txt`"
         echo $MSG
-        git commit -m $MSG 1>/dev/null 
+        git commit -m "$MSG" 1>/dev/null 
         git push -f --quiet --set-upstream origin gh-pages 1>/dev/null 
 
