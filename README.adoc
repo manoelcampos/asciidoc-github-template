@@ -10,9 +10,9 @@
 :toc-title: Sumário
 :toclevels: 5
 
-ifdef::env-github,env-browser[]
-:outfilesuffix: .adoc
+ifdef::env-github[:outfilesuffix: .adoc]
 
+ifdef::env-github,env-browser[]
 // Exibe ícones para os blocos como NOTE e IMPORTANT no GitHub
 :caution-caption: :fire:
 :important-caption: :exclamation:
