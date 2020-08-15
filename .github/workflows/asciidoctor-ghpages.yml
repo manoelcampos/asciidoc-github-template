@@ -30,9 +30,9 @@ jobs:
     - name: Asciidoctor Setup
       run: sudo apt-get install asciidoctor -y   
 
-    #Avoids keeping the "changing history" for the gh-pages branch, 
-    #so that such a branch keeps only the last commit. 
-    #But this slows down the GitHub Pages website build process.
+    # Avoids keeping the commit history for the gh-pages branch, 
+    # so that such a branch keeps only the last commit. 
+    # But this slows down the GitHub Pages website build process.
     - name: Checking out the gh-pages branch without keeping its history
       run: |
         git branch -D gh-pages 1>/dev/null 2>/dev/null || true
@@ -51,9 +51,8 @@ jobs:
            git add -f "$FILE"; 
         done
 
-
     - name: Commiting to gh-pages and pushing changes
       run: |
-        git commit -m "Build AsciiDoc Files for GitHub Pages" 1>/dev/null 
+        git commit -m "Build AsciiDoc Files for GitHub Pages from commit `git log | head -n 1 | cut -d' ' -f2`" 1>/dev/null 
         git push -f --quiet --set-upstream origin gh-pages 1>/dev/null 
 
