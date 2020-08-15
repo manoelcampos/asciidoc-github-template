@@ -37,7 +37,7 @@ jobs:
       run: |
         git branch -D gh-pages 1>/dev/null 2>/dev/null || true
         export LAST_COMMIT_HASH=`git log | head -n 1 | cut -d' ' -f2`
-        echo $LAST_COMMIT_HASH
+        echo "Last commit: $LAST_COMMIT_HASH"
         git checkout --orphan gh-pages master 1>/dev/null
 
     #- name: Checking out the gh-pages branch, keeping its history
@@ -55,6 +55,7 @@ jobs:
 
     - name: Commiting to gh-pages and pushing changes
       run: |
+        echo "Last commit: $LAST_COMMIT_HASH"        
         git commit -m "Build AsciiDoc Files for GitHub Pages from commit $LAST_COMMIT_HASH" 1>/dev/null 
         git push -f --quiet --set-upstream origin gh-pages 1>/dev/null 
 
