@@ -36,8 +36,7 @@ jobs:
     - name: Checking out the gh-pages branch without keeping its history
       run: |
         git branch -D gh-pages 1>/dev/null 2>/dev/null || true
-        LAST_COMMIT_HASH=`git log | head -n 1 | cut -d' ' -f2`
-        echo '::set-env name=LAST_COMMIT_HASH::$LAST_COMMIT_HASH'
+        echo '::set-env name=LAST_COMMIT_HASH::`git log | head -n 1 | cut -d' ' -f2`'
         git checkout --orphan gh-pages master 1>/dev/null
 
     #- name: Checking out the gh-pages branch, keeping its history
