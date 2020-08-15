@@ -10,11 +10,10 @@
 :toc-title: Sumário
 :toclevels: 5
 
-
 ifdef::env-github,env-browser[]
 :outfilesuffix: .adoc
 
-//Exibe ícones para os blocos como NOTE e IMPORTANT no GitHub
+// Exibe ícones para os blocos como NOTE e IMPORTANT no GitHub
 :caution-caption: :fire:
 :important-caption: :exclamation:
 :note-caption: :paperclip:
@@ -27,7 +26,9 @@ endif::[]
 :listing-caption: Listagem
 :figure-caption: Figura
 
-= Elaboração de Material Didático Multimídia com AsciiDoc, git e GitHub
+= Elaboração de Material Didático Multimídia com AsciiDoc, git e GitHub 
+
+ifdef::env-github[image:https://github.com/manoelcampos/asciidoc-github/workflows/asciidoctor-ghpages/badge.svg[GitHub Pages]]
 
 Este repositório serve como um template para a criação de material didático multimídia utilizando
 AsciiDoc e hospedando no GitHub Pages.
