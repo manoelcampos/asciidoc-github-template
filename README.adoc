@@ -26,7 +26,7 @@ endif::[]
 :listing-caption: Listagem
 :figure-caption: Figura
 
-= Elaboração de Material Didático Multimídia com AsciiDoc, git e GitHub 
+= Template para Elaboração de Material Didático Multimídia com AsciiDoc, git e GitHub 
 
 ifdef::env-github[image:https://github.com/manoelcampos/asciidoc-github/workflows/asciidoctor-ghpages/badge.svg[GitHub Pages]]
 
