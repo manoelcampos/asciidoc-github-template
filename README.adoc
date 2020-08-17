@@ -6,7 +6,7 @@
 :imagesdir: /images
 :stylesheet: adoc-golo.css
 :numbered:
-:toc: left
+ifndef::env-github[:toc: left]
 :toc-title: Sumário
 :toclevels: 5
 
