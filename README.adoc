@@ -91,7 +91,7 @@ endif::[]
 
 == GitHub Pages
 
-O repositório usa o https://github.com/manoelcampos/asciidoctor-ghpages-action[AsciiDoctor GitHub Pages Action] para converter automaticamente cada arquivo `adoc` para `html`, enviando tais arquivos para o branch `gh-pages`. Este processo ocorre automaticamente sempre que um push é executado ou pull request enviada. Com isto, o material estará disponível em um site no GitHub Pages.
+O repositório usa a https://github.com/manoelcampos/asciidoctor-ghpages-action[AsciiDoctor GitHub Pages Action] para converter cada arquivo `adoc` para `html`, enviando tais arquivos para o branch `gh-pages`. Este processo ocorre automaticamente sempre que um push é executado ou pull request enviada. Com isto, o material estará disponível em um site no GitHub Pages em `http&#58;//seu-nome-de-usuario.github.io/nome-do-seu-repositorio`.
 
 == Licença
 
