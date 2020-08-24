@@ -28,6 +28,8 @@ endif::[]
 
 = Template para Elaboração de Material Didático Multimídia com AsciiDoc, git e GitHub 
 
+IMPORTANT: Você pode baixar uma versão sempre atualizada em PDF deste material https://github.com/manoelcampos/asciidoc-github-template/blob/gh-pages/ebook.pdf[aqui].
+
 ifdef::env-github[image:https://github.com/manoelcampos/asciidoc-github/workflows/asciidoctor-ghpages/badge.svg[GitHub Pages]]
 
 Este repositório serve como um template para a criação de material didático multimídia utilizando
