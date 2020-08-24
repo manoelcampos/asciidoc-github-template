@@ -24,3 +24,4 @@ jobs:
       uses: manoelcampos/asciidoctor-ghpages-action@v1.3.0
       with:
         asciidoctor_params: --attribute=nofooter
+        pdf_build: true
