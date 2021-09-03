@@ -110,22 +110,14 @@ somente sites como o GitHub tem essa capacidade.
 
 Por outro lado, se você colocar o link com extensão `.html`, vai funcionar na sua hospedagem
 mas não vai funcionar na interface padrão do GitHub.
-Para resolver esse dilema, neste caso, use o comando `xref` no lugar de `link`.
-A estrutura é exatamente a mesma:
+Para resolver esse dilema, neste caso, use a sintaxe a seguir:
 
 [source, asciidoc]
 ----
-xref:documento.adoc[Documento AsciiDoc]
+<<documento_sem_extensao#,Descrição do link para o documento aqui.>>
 ----
 
 Tal comando vai gerar um link, incluindo a extensão apropriada, dependendo de onde e como o arquivo AsciiDoc está sendo aberto.
-Mas para isso funcionar, é preciso incluir o comando `if` abaixo no topo de cada documento:
-
-----
-\ifdef::env-github,env-browser[]
-:outfilesuffix: .adoc
-\endif::[]
-----
 
 === Tabelas
 
