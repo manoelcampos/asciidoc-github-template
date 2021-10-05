@@ -123,6 +123,7 @@ Tal comando vai gerar um link, incluindo a extensão apropriada, dependendo de o
 
 [source, asciidoc]
 ----
+[%header]
 |===
 | Coluna A  | Coluna B  | Coluna C
 | Célula A1 | Célula B1 | Célula C1 
@@ -130,6 +131,7 @@ Tal comando vai gerar um link, incluindo a extensão apropriada, dependendo de o
 |===
 ----
 
+[%header]
 |===
 | Coluna A  | Coluna B  | Coluna C
 | Célula A1 | Célula B1 | Célula C1 
@@ -137,7 +139,7 @@ Tal comando vai gerar um link, incluindo a extensão apropriada, dependendo de o
 |===
 
 Veja que basta separar as colunas por `|` e iniciar e terminar a tabela com `|===`.
-Você pode destacar os títulos usando negrito, por exemplo, como pass:[**Coluna A**].
+A linha `[%header]` é opcional. Ela usa a primeira linha como títulos para as colunas.
 
 === Imagens
 
